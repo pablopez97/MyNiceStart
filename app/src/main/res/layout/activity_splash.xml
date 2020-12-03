@@ -4,17 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity"
-    android:background="@drawable/skyline">
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/cityskyline"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-45dp"
+        tools:layout_editor_absoluteY="-674dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/scrim"
+        android:visibility="visible"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="204dp"
         android:layout_height="232dp"
+        android:layout_marginTop="180dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="104dp"
         app:srcCompat="@drawable/ciudad"
         tools:ignore="VectorDrawableCompat" />
 
@@ -22,13 +36,12 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/averia_sans_libre_bold"
+        android:fontFamily="@font/aldrich"
         android:text="MyRent"
         android:textColor="#000000"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:layout_marginTop="80dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
