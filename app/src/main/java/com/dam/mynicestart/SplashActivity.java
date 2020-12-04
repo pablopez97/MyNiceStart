@@ -12,6 +12,11 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+/**
+ * Vetnana de bienvenida con una animacion y un scrim
+ * @author PabloLópez García
+ * @see LoginActivity
+ */
 public class SplashActivity extends AppCompatActivity {
 
     @Override
