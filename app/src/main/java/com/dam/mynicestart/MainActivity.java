@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-
+/**
+ *Ventana en la que hay un botón el cual hará aparecer el main activity2
+ * Ademas aparecera una imagen de usuario redondeada con glide
+ * @author Pablo López García
+ * @see MainActivity2
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
