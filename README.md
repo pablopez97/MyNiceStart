@@ -7,6 +7,6 @@
 *elemento1
     *subelemento1
 
-Splash | Login
--------|-------
-![](img/splash.JPG) | ![](img/login.JPG)
+Splash | Login | Registro
+-------|-------|---------
+![](img/splash.JPG) | ![](img/login.JPG) |![](img/registro.JPG)
