@@ -5,30 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/colorAccent">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/girl"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="fitStart"
-
-        />
+    android:background="@drawable/skyline">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       app:layout_constraintTop_toBottomOf="@+id/imagenCiudad"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="48dp"
-        android:layout_marginRight="80dp"
         android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="80dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenCiudad"
         app:startIconDrawable="@drawable/person">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -41,28 +30,27 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="80dp"
         android:backgroundTint="@android:color/white"
+        app:endIconMode="password_toggle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username"
-        app:endIconMode="password_toggle"
-        app:startIconDrawable="@drawable/camping"
-        android:layout_marginTop="24dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginLeft="80dp">
+        app:startIconDrawable="@drawable/camping">
 
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="password"
-            android:inputType="textPassword"/>
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:backgroundTint="#009688"
         android:text="ok"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,7 +61,9 @@
         android:layout_marginLeft="160dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.94">
+        app:layout_constraintVertical_bias="0.94"
+        style="@style/ButtonStraight"
+        android:onClick="pasaAmain">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -81,12 +71,25 @@
         android:id="@+id/imagenCiudad"
         android:layout_width="105dp"
         android:layout_height="96dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ciudad"
         tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="registro"
+        android:text="@string/registro"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

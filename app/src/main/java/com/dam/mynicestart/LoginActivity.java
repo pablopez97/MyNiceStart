@@ -5,6 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+
 /**
  *Ventana en la que se comprueban los credenciales de los usuarios contraseña y nombre de usuario
  * @author Pablo López García

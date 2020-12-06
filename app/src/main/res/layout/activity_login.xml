@@ -7,17 +7,6 @@
     tools:context=".LoginActivity"
     android:background="@drawable/skyline">
 
-    <!--<ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/girl"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:scaleType="fitStart"
-
-        />-->
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/username"
         android:layout_width="match_parent"
@@ -62,7 +51,6 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:backgroundTint="@color/colorAccent"
         android:text="ok"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
