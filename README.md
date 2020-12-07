@@ -21,3 +21,5 @@ Splash | Login | Registro
 ![](img/splash.JPG) | ![](img/login.JPG) |![](img/registro.JPG)
 LoginLand |------|RegsistroLand
 ![](img/loginland.JPG)|-----|![](img/resgistroland.JPG)
+MainActivity|------|MainActivity2
+![](img/mainActivity.JPG)|-----|![](img/mainActivity2.JPG)
