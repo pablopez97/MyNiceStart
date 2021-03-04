@@ -7,4 +7,34 @@
     tools:context=".MainActivity2"
     android:background="@drawable/skyline">
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            app:fabAlignmentMode="center"
+            app:menu="@menu/bottom_app_bar_menu"
+            app:navigationIcon="@drawable/ic_menu_on_surface_24dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            android:src="@drawable/ic_add_on_secondary_24dp"
+            app:layout_anchor="@+id/bottom_app_bar"
+            tools:ignore="ContentDescription"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
